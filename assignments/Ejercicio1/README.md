@@ -16,28 +16,26 @@ if __name__ == '__main__':
 
 La línea `#escribe tu código abajo de esta línea` es un comentario, el programa la va a ignorar al ejecutarse.
 
-Diseña e implementa un programa que recibe datos para conformar una listas de palabras, la despliega a pantalla y posteriormente procesa esa lista y construye dos más, donde en la primera están palabras de menos o n caracteres y otra lista donde están las de más de n caracteres. Para lo anterior DEBES CREAR las siguientes funciones en tu programa:
+Diseña e implementa un programa que recibe datos para conformar dos listas de palabras de n elementos, las despliega a pantalla y posteriormente crea una lista con los datos que coinciden en las dos listas y la despliega. Para lo anterior **DEBES CREAR** las siguientes funciones en tu programa:
 
-Función **crea_lista** la cual no tiene parámetros y cuya funcionalidad es recibir palabras o frases del usuario y va creando una lista con ellas. El mensaje para pedirlas será: **">>> "** El proceso de recepción de strings termina cuando el usuario ingresa un **"-"**. La función deberá **regresar** la lista como resultado de la función.
+Función **crea_lista** la cual recibe como parámetro la cantidad de elementos a recibir para conformar la lista. La función recibe las n palabras o frases del usuario y va creando una lista con ellas. El mensaje para pedirlas será: **">>> "**. La función deberá **regresar** la lista como resultado de la función.
 
-Función **divide_lista** la cual recibe como parámetro una lista y un número n, la función crea una lista anidada con dos listas internas donde la primera tiene las palabras con n o menos caracteres y la segunda con más de n caracteres. La función **regresa** la lista anidada.
+Función **coinciden** la cual recibe como parámetro dos listas, la función crea una lista con las palabras que coinciden (elementos que están en las dos listas) entre las dos listas. La función **regresa** la lista creada. TIP: Recorre una lista y ve si sus elementos están en la segunda.
 
-En el **main**, se debe desplegar el mensaje **"Ingresa palabras o frases, para terminar de capturar ingresa -"**, luego se ingresan los datos para la lista (llama a la función correspondiente) y despliega la lista, posteriormente, pide el número de caracteres para dividir la lista con este mensaje: **"Número de caracteres: "** y luego llama a la función correspondiente para que divida la lista de acuerdo al número n de caracteres y por último despliega las dos listas, una en cada renglón, primero la de n o menos caracteres y luego de la más de n caracteres. **Nota:** El número de caracteres deberá ser mayor que cero, de lo contrario, deberá desplegar el mensaje **"Error"** y termina el programa.
+En el **main**, pide al usuario cuántas palabras habrá en cada lista con el mensaje **"Cuantas palabras por lista: "**. Despliega el mensaje **"Ingresa los datos para la lista 1"**. Manda a llamar la función correspondiente para recibir esa cantidad de datos y guarda el resultado y despliegalo a pantalla. Luego despliega el mensaje **"Ingresa los datos para la lista 2"**. Manda a llamar la función correspondiente para recibir esa cantidad de datos y guarda el resultado y despliegalo. Posteriormente usa la función que recibe las dos listas (manda las dos listas creadas anteriormente) y despliega a pantalla el resultado de la función.
 
 ## Ejemplo de ejecución del programa
 ```
-Ingresa palabras o frases, para terminar de capturar ingresa -
+Cuántas palabras por lista: 3
 >>> pelota
->>> la niña
->>> juguete
 >>> carro
->>> muñeca
+>>> juguete
+['pelota', 'carro', 'juguete']
+>>> carro
+>>> pelota
 >>> escondidas
->>> -
-['pelota', 'la niña', 'juguete', 'carro', 'muñeca', 'escondidas']
-Número de caracteres: 6
-['pelota', 'carro', 'muñeca']       
-['la niña', 'juguete', 'escondidas']
+['carro', 'pelota', 'escondidas']
+['carro', 'pelota']
 ```
 .
 
