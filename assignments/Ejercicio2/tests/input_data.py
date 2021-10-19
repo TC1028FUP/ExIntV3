@@ -5,7 +5,7 @@ input_values = [
     # Test case 1
     (
     ["3"],
-    [">>> ", "% % % ", "- - - ", "% % % "],
+    [">>> ", "% % %", "- - -", "% % %"],
     ["La salida no cumple con el caso de prueba"]
     ),
     # Test case 2
